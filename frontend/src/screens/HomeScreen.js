@@ -203,7 +203,7 @@ return (
         </div>
       </div>
 
-      <div className='flex flex-col items-center text-white py-12'>
+      <div id='projects' className='flex flex-col items-center text-white py-12'>
         <div><b className='text-3xl md:text-2xl'>My Projects</b></div>
         <div className='flex items-center flex-col flex-wrap py-24'>
           <div className='md:flex md:items-center md:justify-center md:flex-wrap md:space-x-12'>
