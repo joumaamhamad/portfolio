@@ -28,7 +28,7 @@ export default function HomeScreen() {
       }
     }
   }, [hash]);
-  
+
 
   const downloadFile = () => {
     const fileUrl = 'http://localhost:3000/MhamadJomaa.docx';
@@ -67,7 +67,7 @@ return (
       <a href='https://www.facebook.com/mhamad.jomaa'><FaFacebook className='size-7' /></a>
       <a href='https://github.com/joumaamhamad'><FaGithub className='size-7 ml-6' /></a>
       <a href='https://www.instagram.com/mhamadjomaa8/'><FaInstagram className='size-7 ml-6' /></a>
-      <a href='www.linkedin.com/in/mhamad-jomaa-76409a230'><FaLinkedin className='size-7 ml-6' /></a>
+      <a href='https://www.linkedin.com/in/mhamad-jomaa-76409a230/'><FaLinkedin className='size-7 ml-6' /></a>
     </div>
     <button className='border-2 mt-8 px-3.5 h-10' onClick={() => downloadFile()}>Download CV</button>
   </div>
