@@ -39,7 +39,7 @@ return (
                 <p className='md:text-center md:h-1/3 md:w-2/5 md:text-xl text-l text-center'>Welcome to the Christmas project! This is a HTML/CSS Project, this was completed at the end of 2021 and beginning og 2022 during my training period at front end.</p>
             </div>
 
-            <div className='py-9 text-white'>Click here to visit it: <a className='text-lime-500 underline' href='hh'>click</a></div>
+            
         </div>
 
         <div className='flex flex-col items-center py-24'>
@@ -60,7 +60,6 @@ return (
                 <p className='md:text-center md:h-1/3 md:w-2/5 md:text-xl text-l text-center'>Welcome to the vegetable project! This is a HTML/CSS Project, this was completed in 2022 during my training period at front end.</p>
             </div>
 
-            <div className='py-9 text-white'>Click here to visit it: <a className='text-lime-500 underline' href='hh'>click</a></div>
         </div>
     </div>
 )
