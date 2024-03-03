@@ -8,7 +8,7 @@ import htmlcssImage from '../images/htmlcss/christmas/photo1.png';
 import htmlcssjsImage from '../images/htmlcssjs/xo.png';
 import { Link } from 'react-router-dom';
 import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub } from 'react-icons/fa';
-import profileImage from '../images/profile.jpeg';
+import profileImage from '../images/portfolioimage.jpeg';
 import { useLocation } from 'react-router-dom';
 
 
