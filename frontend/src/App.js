@@ -92,7 +92,7 @@ function App() {
 
     </main>
 
-    <footer className="bg-gray-800 text-gray-300 py-12">
+    <footer className="bg-gray-800 text-gray-300 py-12 pr-8">
       <div className="container mx-auto flex flex-wrap space-x-12">
         <div className="footer-section w-full md:w-1/4 space-y-6 mb-8 ml-8">
           <h2 className="text-xl font-bold mb-4">About Us</h2>

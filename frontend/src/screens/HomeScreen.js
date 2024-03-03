@@ -194,7 +194,7 @@ return (
         <div><b className='text-3xl md:text-2xl'>My Projects</b></div>
         <div className='flex items-center flex-col flex-wrap py-24'>
           <div className='md:flex md:items-center md:justify-center md:flex-wrap md:space-x-12'>
-            <div className='cursor-pointer w-96 h-96 text-center border-4 mt-32 shadow shadow-white duration-200 delay-300 hover:scale-105'>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
               <Link to={'/projects/amazon'}>
                 <img className='h-full w-full' src={homeAmazon} alt='' />
               </Link>
@@ -202,14 +202,14 @@ return (
               <b>Amazon Clone Project</b>
             </div>
 
-            <div className='cursor-pointer w-96 h-96 text-center border-4 mt-32 shadow shadow-white duration-200 delay-300 hover:scale-105'>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
               <Link to={'/projects/yelpcamp'}>
                 <img className='h-full w-full' src={homeYelp} alt=''></img><br/>
               </Link>
               <b>YelpCamp Project</b>
             </div>
 
-            <div className='cursor-pointer w-96 h-96 text-center border-4 mt-32 shadow shadow-white duration-200 delay-300 hover:scale-105'>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
               <Link to={'/projects/university'}>
                 <img className='h-full w-full' src={homeUniversity} alt=''></img><br/>
               </Link>
@@ -218,21 +218,21 @@ return (
           </div>
 
           <div className='md:flex md:items-center md:justify-center md:flex-wrap md:space-x-12'>
-            <div className='cursor-pointer w-96 h-96 text-center border-4 mt-32 shadow shadow-white duration-200 delay-300 hover:scale-105'>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
               <Link to={'/projects/signfrom'}>
                 <img className='h-full w-full' src={signinImage} alt=''></img><br/>
               </Link>
               <b>SignIn/Up Forms</b>
             </div>
 
-            <div className='cursor-pointer w-96 h-96 text-center border-4 mt-32 shadow shadow-white duration-200 delay-300 hover:scale-105'>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
               <Link to={'/projects/frontwebsite'}>
                 <img className='h-full w-full' src={htmlcssImage} alt=''></img><br/>
               </Link>
               <b>HTML/CSS Templates</b>
             </div>
 
-            <div className='cursor-pointer w-96 h-96 text-center border-4 mt-32 shadow shadow-white duration-200 delay-300 hover:scale-105'>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
               <Link to={'/projects/projectjavascript'}>
                 <img className='h-full w-full' src={htmlcssjsImage} alt=''></img><br/>
               </Link>
