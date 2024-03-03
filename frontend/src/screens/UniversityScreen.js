@@ -32,7 +32,7 @@ return (
         <p className='md:text-center md:h-1/3 md:w-2/5 md:text-xl text-l text-center'>This is a university website for the students for the Lebanese university in my master degree, using HTML, CSS, JavaScript, Ajax, JQuery, PHP, sql.</p>
     </div>
 
-    <div className='py-9 text-white'>Click here to visit it: <a className='text-lime-500 underline' href='hh'>click</a></div>
+    <div className='py-9 text-white'>Click here to visit it: <a className='text-lime-500 underline' href='https://github.com/joumaamhamad/university'>click</a></div>
 
 </div>
 )

@@ -32,7 +32,7 @@ return (
             <p className='md:text-center md:h-1/3 md:w-2/5 md:text-xl text-l text-center'>This project is a small project using ejs views, nodejs, expressjs and mongodb.Including CRUD operations, RestFull routes, authentication (using passportjs), authorization ,session managment ,handling errors and other increas.</p>
         </div>
 
-        <div className='py-9 text-white'>Click here to visit it: <a className='text-lime-500 underline' href='h'>click</a></div>
+        <div className='py-9 text-white'>Click here to visit it: <a className='text-lime-500 underline' href='https://github.com/joumaamhamad/YelpCamp'>click</a></div>
     </div>
 
 )

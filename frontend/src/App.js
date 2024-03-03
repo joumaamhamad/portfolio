@@ -116,7 +116,7 @@ function App() {
             <a href="https://www.facebook.com/mhamad.jomaa" className="text-gray-300 hover:text-gray-400 mr-4"><FaFacebook className='size-7' /></a>
             <a href="https://github.com/joumaamhamad" className="text-gray-300 hover:text-gray-400 mr-4"><FaGithub className='size-7 ml-6' /></a>
             <a href="https://www.instagram.com/mhamadjomaa8/" className="text-gray-300 hover:text-gray-400 mr-4"><FaInstagram className='size-7 ml-6' /></a>
-            <a href="www.linkedin.com/in/mhamad-jomaa-76409a230" className="text-gray-300 hover:text-gray-400"><FaLinkedin className='size-7 ml-6' /></a>
+            <a href="https://www.linkedin.com/in/mhamad-jomaa-76409a230/" className="text-gray-300 hover:text-gray-400"><FaLinkedin className='size-7 ml-6' /></a>
           </div>
         </div>
 

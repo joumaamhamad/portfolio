@@ -34,7 +34,7 @@ export default function AmazonScreen() {
         <p className='md:text-center md:h-1/3 md:w-2/5 md:text-xl text-l text-center'>Welcome to the Amazon Clone! This project is a full-stack e-commerce website built using the MERN stack, comprising MongoDB for the database, Express.js for the backend, React.js for the frontend, and Node.js for server-side logic.</p>
       </div>
 
-      <div className='py-9 text-white'>Click here to visit it: <a className='text-lime-500 underline' href='hh'>click</a></div>
+      <div className='py-9 text-white'>Click here to visit it: <a className='text-lime-500 underline' href='https://github.com/joumaamhamad/amazon'>click</a></div>
     </div>
   )
 }
