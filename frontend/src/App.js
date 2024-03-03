@@ -1,5 +1,5 @@
 
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './App.css';
 import { Info } from './Info';
 import { BrowserRouter  , Routes , Route, Link } from 'react-router-dom';
