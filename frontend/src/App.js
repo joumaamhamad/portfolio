@@ -1,8 +1,8 @@
 
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './App.css';
 import { Info } from './Info';
-import { BrowserRouter  , Routes , Route } from 'react-router-dom';
+import { BrowserRouter  , Routes , Route, Link } from 'react-router-dom';
 import AmazonScreen from './screens/AmazonScreen';
 import HomeScreen from './screens/HomeScreen';
 import YelpCampScreen from './screens/YelpCampScreen';
@@ -17,6 +17,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
+
 
   const { state } = useContext(Info);
   const { MyInfo } = state;
@@ -64,13 +65,14 @@ function App() {
 
         <div className='flex flex-row items-center md:flex-row md:items-center'>
           <ul className='flex flex-wrap space-x-4 mb-4 md:mb-0 md:mr-8'>
-            <li className='mb-2 md:mb-0 sm:text-l'><a href='/'>Home</a></li>
-            <li className='mb-2 md:mb-0'><a href='/#about'>About</a></li>
-            <li className='mb-2 md:mb-0'><a href='/?#skills'>Skills</a></li>
-            <li className='mb-2 md:mb-0'><a href='/'>Portfolio</a></li>
+            <li className='mb-2 md:mb-0 sm:text-l'><Link to={'/'}>Home</Link></li>
+            <li className='mb-2 md:mb-0'><Link to={'/#about'}>About</Link></li>
+            <li className='mb-2 md:mb-0'><Link to={'/#skills'}>Skills</Link></li>
+            <li className='mb-2 md:mb-0'><Link to={'/'}>Portfolio</Link></li>
           </ul>
           
-          <button className='contact-me border-2 md:mt-6 md:p-2.5 md:ml-8 ml-4 p-1.5 mb-6'><a href='/?#contact'>Contact Me</a></button>
+          <button className='contact-me border-2 md:mt-6 md:p-2.5 md:ml-8 ml-4 p-1.5 mb-6'><a href='#footer'>Contact M</a>e</button>
+          
           
           
         </div>
@@ -92,8 +94,8 @@ function App() {
 
     </main>
 
-    <footer className="bg-gray-800 text-gray-300 py-12 pr-8">
-      <div className="container mx-auto flex flex-wrap space-x-12">
+    <footer id='footer' className=" bg-gray-800 text-gray-300 py-12 pr-8">
+      <div className="footer container mx-auto flex flex-wrap space-x-12">
         <div className="footer-section w-full md:w-1/4 space-y-6 mb-8 ml-8">
           <h2 className="text-xl font-bold mb-4">About Us</h2>
           <p className="mb-4">

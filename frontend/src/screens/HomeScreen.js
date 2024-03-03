@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import aboutImage from '../images/img1.webp';
 import homeAmazon from '../images/amazonimage/home.png';
 import homeYelp from '../images/yelpcamp/photo0.png';
@@ -9,6 +9,7 @@ import htmlcssjsImage from '../images/htmlcssjs/xo.png';
 import { Link } from 'react-router-dom';
 import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub } from 'react-icons/fa';
 import profileImage from '../images/profile.jpeg';
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -16,6 +17,18 @@ import profileImage from '../images/profile.jpeg';
 
 export default function HomeScreen() {
 
+
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [hash]);
+  
 
   const downloadFile = () => {
     const fileUrl = 'http://localhost:3000/MhamadJomaa.docx';
