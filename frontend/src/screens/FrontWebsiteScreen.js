@@ -45,14 +45,14 @@ return (
         <div className='flex flex-col items-center py-24'>
 
             <div className='flex items-center justify-center space-x-4 space-y-4 '>
-                <div className='md:h-72 h-48 w-full shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={vegHome} alt=''></img></div>
-                <div className='md:h-72 h-48 w-full shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={vegOffer} alt=''></img></div>
+                <div className='md:h-72 h-40 w-full shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={vegHome} alt=''></img></div>
+                <div className='md:h-72 h-40 w-full shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={vegOffer} alt=''></img></div>
             </div>
 
             <div className='flex items-center justify-center space-x-2.5 space-y-2.5 '>
-                <div className='md:h-72 h-48 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={vegCategory} alt=''></img></div>
-                <div className='md:h-72 h-48 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={vegProduct} alt=''></img></div>
-                <div className='md:h-72 h-48 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={vegcustomer} alt=''></img></div>
+                <div className='md:h-72 h-40 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={vegCategory} alt=''></img></div>
+                <div className='md:h-72 h-40 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={vegProduct} alt=''></img></div>
+                <div className='md:h-72 h-40 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={vegcustomer} alt=''></img></div>
             </div>
 
             <div className='text-white py-9 text-2xl'><h1><b>Vegetable Project</b></h1></div>
