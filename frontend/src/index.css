@@ -39,9 +39,73 @@ header ul li{
   color: blue;
 }
 
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background on hover */
+  opacity: 1;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Content color */
+  text-align: center;
+  /* Additional styling for your content */
+}
+
+
 @media only screen and (max-width: 500px) {
 
   .contact-me{
     display: none;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background on hover */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay:hover {
+
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Content color */
+    text-align: center;
+    /* Additional styling for your content */
   }
 }

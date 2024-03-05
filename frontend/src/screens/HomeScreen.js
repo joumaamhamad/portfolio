@@ -207,48 +207,91 @@ return (
         <div><b className='text-3xl md:text-2xl'>My Projects</b></div>
         <div className='flex items-center flex-col flex-wrap py-24'>
           <div className='md:flex md:items-center md:justify-center md:flex-wrap md:space-x-12'>
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
-              <Link to={'/projects/amazon'}>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
+              <div className='image-container h-full w -full'>
                 <img className='h-full w-full' src={homeAmazon} alt='' />
-              </Link>
-              <br/>
+                <Link to={'/projects/amazon'}>
+                  <div className='overlay'>
+                    <div className='content'>
+                      <b>Click for more informations!</b>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
+              <br/><br/>
               <b>Amazon Clone Project</b>
             </div>
 
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
-              <Link to={'/projects/yelpcamp'}>
-                <img className='h-full w-full' src={homeYelp} alt=''></img><br/>
-              </Link>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-30'>
+              <div className='image-container h-full w -full'>
+                <img className='h-full w-full' src={homeYelp} alt=''></img>
+                <Link to={'/projects/yelpcamp'}>
+                  <div className='overlay'>
+                    <div className='content'>
+                    <b>Click for more informations!</b>
+                    </div>
+                  </div>
+                </Link>
+              </div><br/><br/>
               <b>YelpCamp Project</b>
             </div>
 
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
-              <Link to={'/projects/university'}>
-                <img className='h-full w-full' src={homeUniversity} alt=''></img><br/>
-              </Link>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
+              <div className='image-container h-full w -full'>
+                <img className='h-full w-full' src={homeUniversity} alt=''></img>
+                <Link to={'/projects/university'}>
+                  <div className='overlay'>
+                    <div className='content'>
+                    <b>Click for more informations!</b>
+                    </div>
+                  </div>
+                </Link>
+              </div><br/><br/>
               <b>University Project</b>
             </div>
           </div>
 
           <div className='md:flex md:items-center md:justify-center md:flex-wrap md:space-x-12'>
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
+            <div className='image-container h-full w -full'>
+              <img className='h-full w-full' src={signinImage} alt=''></img>
               <Link to={'/projects/signfrom'}>
-                <img className='h-full w-full' src={signinImage} alt=''></img><br/>
+                <div className='overlay'>
+                  <div className='content'>
+                    <b>Click for more informations!</b>
+                  </div>
+                </div>
               </Link>
+            </div><br/><br/>
               <b>SignIn/Up Forms</b>
             </div>
 
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
+            <div className='image-container h-full w -full'>
+              <img className='h-full w-full' src={htmlcssImage} alt=''></img>
               <Link to={'/projects/frontwebsite'}>
-                <img className='h-full w-full' src={htmlcssImage} alt=''></img><br/>
+                <div className='overlay'>
+                  <div className='content'>
+                    <b>Click for more informations!</b>
+                  </div>
+                </div>
               </Link>
+            </div><br/><br/>
               <b>HTML/CSS Templates</b>
             </div>
 
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300 md:hover:scale-105'>
+            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
+            <div className='image-container h-full w -full'>
+              <img className='h-full w-full' src={htmlcssjsImage} alt=''></img>
               <Link to={'/projects/projectjavascript'}>
-                <img className='h-full w-full' src={htmlcssjsImage} alt=''></img><br/>
+                <div className='overlay'>
+                  <div className='content'>
+                    <b>Click for more informations!</b>
+                  </div>
+                </div>
               </Link>
+            </div><br/><br/>
               <b>HTML/CSS/JS Projects</b>
             </div>
           </div>
