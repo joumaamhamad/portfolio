@@ -50,6 +50,9 @@ app.post('/send-email', (req, res) => {
 });
 
 
+app.use((err , req , res , next) => {
+    res.status(500).send({message: err.message});
+})
 
 app.listen(port, () => {
 
