@@ -260,12 +260,12 @@ return (
         <div className='flex flex-col items-center w-3/4 py-44 space-y-12'>
           <div><b className='text-3xl text-white'>Services</b></div>
           <div className='md:flex md:flex-row md:items-center md:justify-center md:ml-0 md:space-x-24 md:py-12 flex-col items-center ml-8 w-full'>
-            <div className='flex flex-col items-center justify-cente text-center space-y-2 border-white border-2 w-full bg-white py-24 pr-16 pl-16 mt-12'>
+            <div className='flex flex-col items-center justify-cente text-center space-y-2 border-white border-2 w-11/12 bg-white py-24 pr-16 pl-16 mt-12'>
               <div><b className='text-2xl'>UI/UX Design</b></div>
               <div><p className='text-xl'>I do ui/ux design for the website that helps website to get ui/ux look.</p></div>
             </div>
 
-            <div className='flex flex-col items-center justify-center text-center space-y-2 border-white border-2 w-full bg-white py-24 pr-16 pl-16 mt-12'>
+            <div className='flex flex-col items-center justify-center text-center space-y-2 border-white border-2 w-11/12 bg-white py-24 pr-16 pl-16 mt-12'>
               <div><b className='text-2xl'>Web Development</b></div>
               <div><p className='text-xl'>I also develop the websites.I create high performance website with blazing fast speed.</p></div>
             </div>
