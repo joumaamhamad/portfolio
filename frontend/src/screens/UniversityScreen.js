@@ -17,14 +17,14 @@ return (
 <div className='flex flex-col items-center py-24'>
 
     <div className='flex items-center justify-center space-x-4 space-y-4 '>
-        <div className='md:h-72 h-40 w-4/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={signinImage} alt=''></img></div>
-        <div className='md:h-72 h-40 w-4/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={noteImage} alt=''></img></div>
+        <div className='md:h-72 h-32 w-4/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={signinImage} alt=''></img></div>
+        <div className='md:h-72 h-32 w-4/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={noteImage} alt=''></img></div>
     </div>
 
     <div className='flex items-center justify-center space-x-2.5 space-y-2.5 '>
-        <div className='md:h-72 h-40 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={homeImage} alt=''></img></div>
-        <div className='md:h-72 h-40 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={contactImage} alt=''></img></div>
-        <div className='md:h-72 h-40 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={contactPageImage} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={homeImage} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={contactImage} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={contactPageImage} alt=''></img></div>
     </div>
 
     <div className='text-white py-9 text-2xl'><h1><b>University Project</b></h1></div>
