@@ -95,9 +95,6 @@ header ul li{
     transition: opacity 0.3s ease;
   }
   
-  .overlay:hover {
-
-  }
   
   .content {
     position: absolute;

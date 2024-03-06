@@ -120,7 +120,7 @@ function App() {
           </div>
         </div>
 
-        <div className="footer-section w-full md:w-1/3 mb-8">
+        <div className="footer-section w-full md:w-1/4 mb-8">
           <h2 className="text-xl font-bold mb-4">Quick Links</h2>
           <ul>
             <li className='mb-1.5'><a href="/" className="text-gray-300 hover:text-gray-400">Home</a></li>
