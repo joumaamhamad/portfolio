@@ -99,9 +99,7 @@ function App() {
         <div className="footer-section w-full md:w-1/4 space-y-6 mb-8 ml-8">
           <h2 className="text-xl font-bold mb-4">About Us</h2>
           <p className="mb-4">
-            Im Mhamad Jomaa, im a mern stack developer. i have
-            a personal experience in this domain and i hve some projects
-            also.
+            Hi, I'm Mhamad Jomaa, a skilled MERN stack developer with hands-on experience and a portfolio of successful projects. Let's collaborate to bring your ideas to life.
           </p>
           <div className="contact">
             <span className='flex space-x-2'>

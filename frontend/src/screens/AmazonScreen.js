@@ -23,7 +23,7 @@ export default function AmazonScreen() {
         <div className='md:h-72 h-32 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={cartImage} alt=''></img></div>
       </div>
 
-      <div className='flex items-center justify-center space-x-2.5 space-y-2.5 '>
+      <div className='flex items-center justify-center space-x-4 space-y-4  '>
         <div className='md:h-72 h-32 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={orderImage} alt=''></img></div>
         <div className='md:h-72 h-32 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={shippingImage} alt=''></img></div>
         <div className='md:h-72 h-32 w-1/4 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={usersImage} alt=''></img></div>
