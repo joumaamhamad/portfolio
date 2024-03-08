@@ -12,9 +12,6 @@ import profileImage from '../images/portfolioimage.jpeg';
 import { useLocation } from 'react-router-dom';
 
 
-
-
-
 export default function HomeScreen() {
 
 
@@ -48,6 +45,8 @@ export default function HomeScreen() {
     document.body.removeChild(link);
   }
 
+  
+
 
 
 //flex mt-3 ml-44 md:flex md:mt-3 md:mr-16 md:ml-0
@@ -79,11 +78,11 @@ return (
 
       <div id='about' className='flex flex-wrap items-center justify-center pt-12 pb-44 w-full'>
 
-        <div className='md:w-1/2 md:h-1/2 border-2'>
+        <div className='aboutImageDiv md:w-1/2 md:h-1/2 border-2'>
           <img className='h-full w-full' src={aboutImage} alt=''></img>
         </div>
 
-        <div className='text-white md:w-1/3 md:h-1/2 ml-9 mt-6'>
+        <div className='text-white md:w-1/3 md:h-1/2 ml-6 mt-6'>
           <div>
             <b className='text-3xl py-12'>About Me</b>
             <p className='mt-6'>A dedicated and highly skilled MERN (MongoDB, Express.js, React.js, Node.js) stack developer with a passion for creating robust and innovative web applications. With a strong foundation in full-stack development, I am committed to delivering high-quality, scalable, and user-friendly solutions that meet and exceed client expectations. Seeking opportunities to contribute my expertise in front-end and back-end development to a dynamic team, where I can continue to grow professionally and create cutting-edge web experiences</p>

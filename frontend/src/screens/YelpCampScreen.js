@@ -15,16 +15,16 @@ export default function YelpCampScrren() {
 
 return (
     
-    <div className='flex flex-col items-center py-24'>
+    <div className='flex flex-col items-center py-24 lg:px-20'>
 
-        <div className='flex items-center justify-center space-x-4 space-y-4 '>
+        <div className='flex items-center justify-center space-x-4'>
             <div className='md:h-72 h-32 w-2/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={homeImage} alt=''></img></div>
             <div className='md:h-72 h-32 w-2/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={campgroundsImage} alt=''></img></div>
         </div>
 
-        <div className='flex items-center justify-center space-x-4 space-y-4 '>
-            <div className='md:h-72 h-32 w-2/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={campgroundImage} alt=''></img></div>
-            <div className='md:h-72 h-32 w-2/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={newCamp} alt=''></img></div>
+        <div className='flex items-center justify-center space-x-4'>
+            <div className='md:h-72 h-32 w-2/5 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={campgroundImage} alt=''></img></div>
+            <div className='md:h-72 h-32 w-2/5 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={newCamp} alt=''></img></div>
         </div>
 
         <div className='text-white py-9 text-2xl'><h1><b>YelpCamp Project</b></h1></div>
