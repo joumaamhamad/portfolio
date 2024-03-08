@@ -1,9 +1,4 @@
 import React, { useEffect } from 'react';
-import homeImage from '../images/university/photo1.png';
-import contactImage from '../images/university/photo5.png';
-import contactPageImage from '../images/university/photo6.png';
-import signinImage from '../images/university/photo7.png';
-import noteImage from '../images/university/photo8.png';
 
 
 export default function UniversityScreen() {
@@ -17,14 +12,14 @@ return (
 <div className='flex flex-col items-center py-24 px-3.5 lg:px-20'>
 
     <div className='flex items-center justify-center space-x-4'>
-        <div className='md:h-72 h-32 md:w-4/5 w-3/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={signinImage} alt=''></img></div>
-        <div className='md:h-72 h-32 md:w-4/5 w-3/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={noteImage} alt=''></img></div>
+        <div className='md:h-72 h-32 md:w-4/5 w-3/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={'../images/university/photo7.png'} alt=''></img></div>
+        <div className='md:h-72 h-32 md:w-4/5 w-3/5 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={'../images/university/photo8.png'} alt=''></img></div>
     </div>
 
     <div className='flex items-center justify-center space-x-4'>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={homeImage} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={contactImage} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={contactPageImage} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/university/photo1.png'} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/university/photo5.png'} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/university/photo6.png'} alt=''></img></div>
     </div>
 
     <div className='text-white py-9 text-2xl'><h1><b>University Project</b></h1></div>

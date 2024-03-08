@@ -1,10 +1,4 @@
 import React, { useEffect } from 'react';
-import homeImage from '../images/amazonimage/home.png'
-import searchImage from '../images/amazonimage/search.png';
-import cartImage from '../images/amazonimage/cart.png';
-import orderImage from '../images/amazonimage/order.png';
-import shippingImage from '../images/amazonimage/shipping.png';
-import usersImage from '../images/amazonimage/userList.png';
 
 
 export default function AmazonScreen() {
@@ -18,15 +12,15 @@ export default function AmazonScreen() {
     <div className='flex flex-col items-center py-24 px-4 lg:px-20'>
 
       <div className='flex items-center justify-center space-x-4'>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={homeImage} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={searchImage} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={cartImage} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={'../images/amazonimage/home.png'} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={'../images/amazonimage/search.png'} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={'../images/amazonimage/cart.png'} alt=''></img></div>
       </div>
 
       <div className='flex items-center justify-center space-x-4'>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={orderImage} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={shippingImage} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={usersImage} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/amazonimage/order.png'} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/amazonimage/shipping.png'} alt=''></img></div>
+        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/amazonimage/userList.png'} alt=''></img></div>
       </div>
 
       <div className='text-white py-9 text-2xl'><h1><b>Amazon Clone Project</b></h1></div>

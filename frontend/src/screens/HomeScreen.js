@@ -1,14 +1,6 @@
 import React, { useEffect } from 'react';
-import aboutImage from '../images/img1.webp';
-import homeAmazon from '../images/amazonimage/home.png';
-import homeYelp from '../images/yelpcamp/photo0.png';
-import signinImage from '../images/htmlcss/signin2.png';
-import homeUniversity from '../images/university/photo1.png';
-import htmlcssImage from '../images/htmlcss/christmas/photo1.png';
-import htmlcssjsImage from '../images/htmlcssjs/xo.png';
 import { Link } from 'react-router-dom';
 import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub } from 'react-icons/fa';
-import profileImage from '../images/portfolioimage.jpeg';
 import { useLocation } from 'react-router-dom';
 
 
@@ -72,14 +64,14 @@ return (
   </div>
 
 <div className='md:relative md:bottom-20 md:w-1/4 md:h-1/4 md:mt-0 mt-8 mb-8 ml-24 w-1/2'>
-  <img className='h-full w-full rounded-full border-4 mx-auto md:ml-0 md:mb-32' alt='ok' src={profileImage} />
+  <img className='h-full w-full rounded-full border-4 mx-auto md:ml-0 md:mb-32' alt='ok' src={'../images/portfolioimage.jpeg'} />
 </div>
 </div>
 
       <div id='about' className='flex flex-wrap items-center justify-center pt-12 pb-44 w-full'>
 
         <div className='aboutImageDiv md:w-1/2 md:h-1/2 border-2'>
-          <img className='h-full w-full' src={aboutImage} alt=''></img>
+          <img className='h-full w-full' src={'../images/img1.webp'} alt=''></img>
         </div>
 
         <div className='text-white md:w-1/3 md:h-1/2 ml-6 mt-6'>
@@ -208,7 +200,7 @@ return (
           <div className='md:flex md:items-center md:justify-center md:flex-wrap md:space-x-12'>
             <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
               <div className='image-container h-full w -full'>
-                <img className='h-full w-full' src={homeAmazon} alt='' />
+                <img className='h-full w-full' src={'../images/amazonimage/home.png'} alt='' />
                 <Link to={'/projects/amazon'}>
                   <div className='overlay'>
                     <div className='content'>
@@ -224,7 +216,7 @@ return (
 
             <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-30'>
               <div className='image-container h-full w -full'>
-                <img className='h-full w-full' src={homeYelp} alt=''></img>
+                <img className='h-full w-full' src={'../images/yelpcamp/photo0.png'} alt=''></img>
                 <Link to={'/projects/yelpcamp'}>
                   <div className='overlay'>
                     <div className='content'>
@@ -238,7 +230,7 @@ return (
 
             <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
               <div className='image-container h-full w -full'>
-                <img className='h-full w-full' src={homeUniversity} alt=''></img>
+                <img className='h-full w-full' src={'../images/university/photo1.png'} alt=''></img>
                 <Link to={'/projects/university'}>
                   <div className='overlay'>
                     <div className='content'>
@@ -254,7 +246,7 @@ return (
           <div className='md:flex md:items-center md:justify-center md:flex-wrap md:space-x-12'>
             <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
             <div className='image-container h-full w -full'>
-              <img className='h-full w-full' src={signinImage} alt=''></img>
+              <img className='h-full w-full' src={'../images/htmlcss/signin2.png'} alt=''></img>
               <Link to={'/projects/signfrom'}>
                 <div className='overlay'>
                   <div className='content'>
@@ -268,7 +260,7 @@ return (
 
             <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
             <div className='image-container h-full w -full'>
-              <img className='h-full w-full' src={htmlcssImage} alt=''></img>
+              <img className='h-full w-full' src={'../images/htmlcss/christmas/photo1.png'} alt=''></img>
               <Link to={'/projects/frontwebsite'}>
                 <div className='overlay'>
                   <div className='content'>
@@ -282,7 +274,7 @@ return (
 
             <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
             <div className='image-container h-full w -full'>
-              <img className='h-full w-full' src={htmlcssjsImage} alt=''></img>
+              <img className='h-full w-full' src={'../images/htmlcssjs/xo.png'} alt=''></img>
               <Link to={'/projects/projectjavascript'}>
                 <div className='overlay'>
                   <div className='content'>
