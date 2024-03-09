@@ -1,7 +1,6 @@
 
-import React, { useContext, useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import './App.css';
-import { Info } from './Info';
 import { BrowserRouter  , Routes , Route, Link } from 'react-router-dom';
 import AmazonScreen from './screens/AmazonScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -10,7 +9,7 @@ import UniversityScreen from './screens/UniversityScreen';
 import SignScreen from './screens/SignScreen';
 import FrontWebsiteScreen from './screens/FrontWebsiteScreen';
 import ProjectJavascriptScreen from './screens/ProjectJavascriptScreen';
-import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub, FaVolumeUp } from 'react-icons/fa';
+import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub  } from 'react-icons/fa';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
