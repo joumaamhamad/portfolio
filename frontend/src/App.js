@@ -1,5 +1,5 @@
 
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './App.css';
 import { Info } from './Info';
 import { BrowserRouter  , Routes , Route, Link } from 'react-router-dom';
@@ -10,7 +10,7 @@ import UniversityScreen from './screens/UniversityScreen';
 import SignScreen from './screens/SignScreen';
 import FrontWebsiteScreen from './screens/FrontWebsiteScreen';
 import ProjectJavascriptScreen from './screens/ProjectJavascriptScreen';
-import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub, FaVolumeUp } from 'react-icons/fa';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -19,13 +19,13 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
 
 
-  const { state } = useContext(Info);
-  const { MyInfo } = state;
-  console.log(MyInfo);
 
   const [email , setEmail ] = useState('');
   const [message , setMessage ] = useState('');
   const [ isSending , setIsSending ] = useState(false);
+  //const [audioLoaded, setAudioLoaded] = useState(false);
+  //const [audio] = useState(new Audio('./images/paudio.mp3'));
+
 
   const sendEmail = async (e) => {
 
@@ -52,6 +52,22 @@ function App() {
     }
   };
 
+/*
+  const handleAudioPlay = () => {
+    if (!audioLoaded) {
+      audio.volume = 0.5;
+      audio.play().catch(error => {
+        
+        console.error('Error playing audio:', error);
+      });
+      setAudioLoaded(true);
+    } else {
+      audio.pause();
+      setAudioLoaded(false);
+    }
+  };
+*/
+
 
   return (
 <BrowserRouter>
@@ -61,23 +77,21 @@ function App() {
     <header className='flex flex-col items-center w-full bg-current py-6'>
 
       <div className='flex flex-row md:flex-row items-center justify-between text-white pl-0.5 pb-7'>
+
         <b className='md:text-4xl text-xl mb-6 md:mb-2 md:mr-96'>Portfolio</b>
 
         <div className='flex flex-row items-center md:flex-row md:items-center'>
           <ul className='flex flex-wrap space-x-4 mb-4 md:mb-0 md:mr-8'>
-            <li className='mb-2 md:mb-0 sm:text-l'><Link to={'/'}>Home</Link></li>
+            <li className='mb-2 md:mb-0l'><Link to={'/'}>Home</Link></li>
             <li className='mb-2 md:mb-0'><Link to={'/#about'}>About</Link></li>
             <li className='mb-2 md:mb-0'><Link to={'/#skills'}>Skills</Link></li>
             <li className='mb-2 md:mb-0'><Link to={'/#projects'}>Projects</Link></li>
           </ul>
           
-          <button className='contact-me border-2 md:mt-6 md:p-2.5 md:ml-8 ml-4 p-1.5 mb-6'><a href='#footer'>Contact M</a>e</button>
-          
-          
+          <button className='contact-me border-2 md:mt-6 md:p-2.5 md:ml-8 ml-4 p-1.5 mb-6'><a href='#footer'>Contact Me</a></button>
           
         </div>
       </div>
-
     </header>
 
 

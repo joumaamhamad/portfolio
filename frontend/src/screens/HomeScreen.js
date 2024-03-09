@@ -42,6 +42,8 @@ export default function HomeScreen() {
 
 
 //flex mt-3 ml-44 md:flex md:mt-3 md:mr-16 md:ml-0
+//<img className='h-full w-full rounded-full border-4 mx-auto md:ml-0 md:mb-32' alt='ok' src={'../images/portfolioimage.jpeg'} />
+//<img className='h-full w-full' src={'../images/img1.webp'} alt=''></img>
 
 return (
     <div>
@@ -71,7 +73,10 @@ return (
       <div id='about' className='flex flex-wrap items-center justify-center pt-12 pb-44 w-full'>
 
         <div className='aboutImageDiv md:w-1/2 md:h-1/2 border-2'>
-          <img className='h-full w-full' src={'../images/img1.webp'} alt=''></img>
+          <video controls autoPlay poster="../images/img1.webp">
+            <source src="../images/pvideo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+          </video>
         </div>
 
         <div className='text-white md:w-1/3 md:h-1/2 ml-6 mt-6'>
