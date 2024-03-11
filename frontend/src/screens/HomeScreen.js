@@ -73,7 +73,7 @@ return (
       <div id='about' className='flex flex-wrap items-center justify-center pt-12 pb-44 w-full'>
 
         <div className='aboutImageDiv md:w-1/2 md:h-1/2 border-2'>
-          <video controls autoPlay poster="../images/img1.webp">
+          <video controls poster="../images/img1.webp">
             <source src="../images/pvideo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
           </video>
