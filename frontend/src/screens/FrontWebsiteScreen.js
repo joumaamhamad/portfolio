@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Image from '../components/Image';
 
 
 export default function FrontWebsiteScreen() {
@@ -13,15 +14,19 @@ return (
         <div className='flex flex-col items-center py-24 px-3.5 lg:px-20'>
 
             <div className='flex items-center justify-center space-x-4'>
-                <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={'../images/htmlcss/christmas/photo1.png'} alt=''></img></div>
-                <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={'../images/htmlcss/christmas/photo2.png'} alt=''></img></div>
-                <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={'../images/htmlcss/christmas/photo3.png'} alt=''></img></div>
+
+                <Image src={'../images/htmlcss/christmas/photo1.png'} />
+                <Image src={'../images/htmlcss/christmas/photo2.png'} />
+                <Image src={'../images/htmlcss/christmas/photo3.png'} />
+
             </div>
 
             <div className='flex items-center justify-center space-x-4'>
-                <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/htmlcss/christmas/photo4.png'} alt=''></img></div>
-                <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/htmlcss/christmas/photo5.png'} alt=''></img></div>
-                <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/htmlcss/christmas/photo6.png'} alt=''></img></div>
+
+                <Image src={'../images/htmlcss/christmas/photo4.png'} />
+                <Image src={'../images/htmlcss/christmas/photo5.png'} />
+                <Image src={'../images/htmlcss/christmas/photo6.png'} />
+
             </div>
 
             <div className='text-white py-9 text-2xl'><h1><b>Christmas Project</b></h1></div>
@@ -40,9 +45,11 @@ return (
             </div>
 
             <div className='flex items-center justify-center space-x-4'>
-                <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/htmlcss/vegetable/photo3.png'} alt=''></img></div>
-                <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/htmlcss/vegetable/photo4.png'} alt=''></img></div>
-                <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/htmlcss/vegetable/photo5.png'} alt=''></img></div>
+
+                <Image src={'../images/htmlcss/vegetable/photo3.png'} />
+                <Image src={'../images/htmlcss/vegetable/photo4.png'} />
+                <Image src={'../images/htmlcss/vegetable/photo5.png'} />
+                
             </div>
 
             <div className='text-white py-9 text-2xl'><h1><b>Vegetable Project</b></h1></div>

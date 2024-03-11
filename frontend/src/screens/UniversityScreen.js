@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Image from '../components/Image';
 
 
 export default function UniversityScreen() {
@@ -17,9 +18,11 @@ return (
     </div>
 
     <div className='flex items-center justify-center space-x-4'>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/university/photo1.png'} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/university/photo5.png'} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/university/photo6.png'} alt=''></img></div>
+
+        <Image src={'../images/university/photo1.png'} />
+        <Image src={'../images/university/photo5.png'} />
+        <Image src={'../images/university/photo6.png'} />
+        
     </div>
 
     <div className='text-white py-9 text-2xl'><h1><b>University Project</b></h1></div>

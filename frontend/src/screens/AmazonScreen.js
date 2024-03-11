@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Image from '../components/Image';
 
 
 export default function AmazonScreen() {
@@ -12,15 +13,19 @@ export default function AmazonScreen() {
     <div className='flex flex-col items-center py-24 px-4 lg:px-20'>
 
       <div className='flex items-center justify-center space-x-4'>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={'../images/amazonimage/home.png'} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={'../images/amazonimage/search.png'} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer'><img className='h-full w-full' src={'../images/amazonimage/cart.png'} alt=''></img></div>
+
+        <Image src={'../images/amazonimage/home.png'} />
+        <Image src={'../images/amazonimage/search.png'} />
+        <Image src={'../images/amazonimage/cart.png'} />
+
       </div>
 
       <div className='flex items-center justify-center space-x-4'>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/amazonimage/order.png'} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/amazonimage/shipping.png'} alt=''></img></div>
-        <div className='md:h-72 h-32 w-1/3 shadow-sm shadow-white cursor-pointer mt-3.5'><img className='h-full w-full' src={'../images/amazonimage/userList.png'} alt=''></img></div>
+
+      <Image src={'../images/amazonimage/order.png'} />
+      <Image src={'../images/amazonimage/shipping.png'} />
+      <Image src={'../images/amazonimage/userList.png'} />
+
       </div>
 
       <div className='text-white py-9 text-2xl'><h1><b>Amazon Clone Project</b></h1></div>

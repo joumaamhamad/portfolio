@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
+import ImageCard from '../components/ImageCard';
+import Progress from '../components/Progress';
 
 
 export default function HomeScreen() {
@@ -39,11 +40,6 @@ export default function HomeScreen() {
 
   
 
-
-
-//flex mt-3 ml-44 md:flex md:mt-3 md:mr-16 md:ml-0
-//<img className='h-full w-full rounded-full border-4 mx-auto md:ml-0 md:mb-32' alt='ok' src={'../images/portfolioimage.jpeg'} />
-//<img className='h-full w-full' src={'../images/img1.webp'} alt=''></img>
 
 return (
     <div>
@@ -129,71 +125,30 @@ return (
           </div>
 
           <div className='md:flex md:flex-col md:items-start ml-12'>
+
             <b className='text-2xl py-2.5 underline'>Personal Skills</b>
-            <div className='py-1'>
-              <p>HTML:</p>
-              <progress className='md:w-96 w-72' value="100" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>CSS:</p>
-              <progress className='md:w-96 w-72' value="100" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>Java Script:</p>
-              <progress className='md:w-96 w-72' value="100" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>ReactJs:</p>
-              <progress className='md:w-96 w-72' value="85" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>NodeJs:</p>
-              <progress className='md:w-96 w-72' value="80" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>ExpressJs:</p>
-              <progress className='md:w-96 w-72' value="80" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>MongoDB:</p>
-              <progress className='md:w-96 w-72' value="80" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>Git/GitHub:</p>
-              <progress className='md:w-96 w-72' value="80" max="100"></progress>
-            </div>
+            <Progress value={100} title={'HTML:'} />
+            <Progress value={100} title={'CSS:'} />
+            <Progress value={100} title={'Java Script:'} />
+            <Progress value={85} title={'ReactJs:'} />
+            <Progress value={80} title={'NodeJs:'} />
+            <Progress value={80} title={'ExpressJs:'} />
+            <Progress value={80} title={'MongoDB:'} />
+            <Progress value={80} title={'Git/GitHub:'} />
+
           </div>
 
           <div className='md:flex md:flex-col md:items-start mt-12 ml-12'>
+
             <b className='text-2xl py-2.5 underline'>University Skills</b>
-            <div className='py-1'>
-              <p>C Language:</p>
-              <progress className='md:w-96 w-72' value="70" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>MySQL:</p>
-              <progress className='md:w-96 w-72' value="80" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>Java:</p>
-              <progress className='md:w-96 w-72' value="65" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>Graphic User Interface:</p>
-              <progress className='md:w-96 w-72' value="70" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>Work with Linux.:</p>
-              <progress className='md:w-96 w-72' value="100" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>PHP:</p>
-              <progress className='md:w-96 w-72' value="85" max="100"></progress>
-            </div>
-            <div className='py-1'>
-              <p>JQuery/Ajax:</p>
-              <progress className='md:w-96 w-72' value="70" max="100"></progress>
-            </div>
+            <Progress value={70} title={'C Language:'} />
+            <Progress value={80} title={'MySQL:'} />
+            <Progress value={65} title={'Java:'} />
+            <Progress value={70} title={'Graphic User Interface:'} />
+            <Progress value={90} title={'Work with Linux:'} />
+            <Progress value={85} title={'PHP:'} />
+            <Progress value={70} title={'JQuery/Ajax:'} />
+
           </div>
 
         </div>
@@ -203,93 +158,19 @@ return (
         <div><b className='text-3xl md:text-2xl'>My Projects</b></div>
         <div className='flex items-center flex-col flex-wrap py-24'>
           <div className='md:flex md:items-center md:justify-center md:flex-wrap md:space-x-12'>
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
-              <div className='image-container h-full w -full'>
-                <img className='h-full w-full' src={'../images/amazonimage/home.png'} alt='' />
-                <Link to={'/projects/amazon'}>
-                  <div className='overlay'>
-                    <div className='content'>
-                      <b>Click for more informations!</b>
-                    </div>
-                  </div>
-                </Link>
-              </div>
 
-              <br/><br/>
-              <b>Amazon Clone Project</b>
-            </div>
+            <ImageCard path={'/projects/amazon'} src={'../images/amazonimage/home.png'} title={'Amazon Clone Project'} />
+            <ImageCard path={'/projects/yelpcamp'} src={'../images/yelpcamp/photo0.png'} title={'YelpCamp Project'} />
+            <ImageCard path={'/projects/university'} src={'../images/university/photo1.png'} title={'University Project'} />
 
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-30'>
-              <div className='image-container h-full w -full'>
-                <img className='h-full w-full' src={'../images/yelpcamp/photo0.png'} alt=''></img>
-                <Link to={'/projects/yelpcamp'}>
-                  <div className='overlay'>
-                    <div className='content'>
-                    <b>Click for more informations!</b>
-                    </div>
-                  </div>
-                </Link>
-              </div><br/><br/>
-              <b>YelpCamp Project</b>
-            </div>
-
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
-              <div className='image-container h-full w -full'>
-                <img className='h-full w-full' src={'../images/university/photo1.png'} alt=''></img>
-                <Link to={'/projects/university'}>
-                  <div className='overlay'>
-                    <div className='content'>
-                    <b>Click for more informations!</b>
-                    </div>
-                  </div>
-                </Link>
-              </div><br/><br/>
-              <b>University Project</b>
-            </div>
           </div>
 
           <div className='md:flex md:items-center md:justify-center md:flex-wrap md:space-x-12'>
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
-            <div className='image-container h-full w -full'>
-              <img className='h-full w-full' src={'../images/htmlcss/signin2.png'} alt=''></img>
-              <Link to={'/projects/signfrom'}>
-                <div className='overlay'>
-                  <div className='content'>
-                    <b>Click for more informations!</b>
-                  </div>
-                </div>
-              </Link>
-            </div><br/><br/>
-              <b>SignIn/Up Forms</b>
-            </div>
 
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
-            <div className='image-container h-full w -full'>
-              <img className='h-full w-full' src={'../images/htmlcss/christmas/photo1.png'} alt=''></img>
-              <Link to={'/projects/frontwebsite'}>
-                <div className='overlay'>
-                  <div className='content'>
-                    <b>Click for more informations!</b>
-                  </div>
-                </div>
-              </Link>
-            </div><br/><br/>
-              <b>HTML/CSS Templates</b>
-            </div>
+            <ImageCard path={'/projects/signfrom'} src={'../images/htmlcss/signin2.png'} title={'SignIn/Up Forms'} />
+            <ImageCard path={'/projects/frontwebsite'} src={'../images/htmlcss/christmas/photo1.png'} title={'HTML/CSS Templates'} />
+            <ImageCard path={'/projects/projectjavascript'} src={'../images/htmlcssjs/xo.png'} title={'HTML/CSS/JS Projects'} />
 
-            <div className='cursor-pointer w-80 h-96 text-center border-4 mt-32 shadow shadow-white md:duration-200 md:delay-300'>
-            <div className='image-container h-full w -full'>
-              <img className='h-full w-full' src={'../images/htmlcssjs/xo.png'} alt=''></img>
-              <Link to={'/projects/projectjavascript'}>
-                <div className='overlay'>
-                  <div className='content'>
-                    <b>Click for more informations!</b>
-                  </div>
-                </div>
-              </Link>
-            </div><br/><br/>
-              <b>HTML/CSS/JS Projects</b>
-            </div>
           </div>
 
         </div>
