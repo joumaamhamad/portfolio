@@ -14,17 +14,17 @@ export default function AmazonScreen() {
 
       <div className='flex items-center justify-center space-x-4'>
 
-        <Image src={'../images/amazonimage/home.png'} />
-        <Image src={'../images/amazonimage/search.png'} />
-        <Image src={'../images/amazonimage/cart.png'} />
+        <Image src='../images/amazonimage/home.png' />
+        <Image src='../images/amazonimage/search.png' />
+        <Image src='../images/amazonimage/cart.png' />
 
       </div>
 
       <div className='flex items-center justify-center space-x-4'>
 
-      <Image src={'../images/amazonimage/order.png'} />
-      <Image src={'../images/amazonimage/shipping.png'} />
-      <Image src={'../images/amazonimage/userList.png'} />
+      <Image src='../images/amazonimage/order.png' />
+      <Image src='../images/amazonimage/shipping.png' />
+      <Image src='../images/amazonimage/userList.png' />
 
       </div>
 

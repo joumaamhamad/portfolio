@@ -15,17 +15,17 @@ return (
 
             <div className='flex items-center justify-center space-x-4'>
 
-                <Image src={'../images/htmlcss/christmas/photo1.png'} />
-                <Image src={'../images/htmlcss/christmas/photo2.png'} />
-                <Image src={'../images/htmlcss/christmas/photo3.png'} />
+                <Image src='../images/htmlcss/christmas/photo1.png' />
+                <Image src='../images/htmlcss/christmas/photo2.png' />
+                <Image src='../images/htmlcss/christmas/photo3.png' />
 
             </div>
 
             <div className='flex items-center justify-center space-x-4'>
 
-                <Image src={'../images/htmlcss/christmas/photo4.png'} />
-                <Image src={'../images/htmlcss/christmas/photo5.png'} />
-                <Image src={'../images/htmlcss/christmas/photo6.png'} />
+                <Image src='../images/htmlcss/christmas/photo4.png' />
+                <Image src='../images/htmlcss/christmas/photo5.png' />
+                <Image src='../images/htmlcss/christmas/photo6.png' />
 
             </div>
 

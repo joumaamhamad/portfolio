@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
-import ImageCard from '../components/ImageCard';
 import Progress from '../components/Progress';
+import Card from '../components/Card';
 
 
 export default function HomeScreen() {
@@ -127,27 +127,27 @@ return (
           <div className='md:flex md:flex-col md:items-start ml-12'>
 
             <b className='text-2xl py-2.5 underline'>Personal Skills</b>
-            <Progress value={100} title={'HTML:'} />
-            <Progress value={100} title={'CSS:'} />
-            <Progress value={100} title={'Java Script:'} />
-            <Progress value={85} title={'ReactJs:'} />
-            <Progress value={80} title={'NodeJs:'} />
-            <Progress value={80} title={'ExpressJs:'} />
-            <Progress value={80} title={'MongoDB:'} />
-            <Progress value={80} title={'Git/GitHub:'} />
+            <Progress value={100} title='HTML:' />
+            <Progress value={100} title='CSS:' />
+            <Progress value={100} title='Java Script:' />
+            <Progress value={85} title='ReactJs:' />
+            <Progress value={80} title='NodeJs:' />
+            <Progress value={80} title='ExpressJs:' />
+            <Progress value={80} title='MongoDB:' />
+            <Progress value={80} title='Git/GitHub:' />
 
           </div>
 
           <div className='md:flex md:flex-col md:items-start mt-12 ml-12'>
 
             <b className='text-2xl py-2.5 underline'>University Skills</b>
-            <Progress value={70} title={'C Language:'} />
-            <Progress value={80} title={'MySQL:'} />
-            <Progress value={65} title={'Java:'} />
-            <Progress value={70} title={'Graphic User Interface:'} />
-            <Progress value={90} title={'Work with Linux:'} />
-            <Progress value={85} title={'PHP:'} />
-            <Progress value={70} title={'JQuery/Ajax:'} />
+            <Progress value={70} title='C Language:' />
+            <Progress value={80} title='MySQL:' />
+            <Progress value={65} title='Java:' />
+            <Progress value={70} title='Graphic User Interface:' />
+            <Progress value={90} title='Work with Linux:' />
+            <Progress value={85} title='PHP:' />
+            <Progress value={70} title='JQuery/Ajax:' />
 
           </div>
 
@@ -158,18 +158,18 @@ return (
         <div><b className='text-3xl md:text-2xl'>My Projects</b></div>
         <div className='flex items-center flex-col flex-wrap py-24'>
           <div className='md:flex md:items-center md:justify-center md:flex-wrap md:space-x-12'>
-
-            <ImageCard path={'/projects/amazon'} src={'../images/amazonimage/home.png'} title={'Amazon Clone Project'} />
-            <ImageCard path={'/projects/yelpcamp'} src={'../images/yelpcamp/photo0.png'} title={'YelpCamp Project'} />
-            <ImageCard path={'/projects/university'} src={'../images/university/photo1.png'} title={'University Project'} />
+            
+            <Card path='/projects/amazon' src='../images/amazonimage/home.png' title='Amazon Clone Project' />
+            <Card path='/projects/yelpcamp' src='../images/yelpcamp/photo0.png' title='YelpCamp Project' />
+            <Card path='/projects/university' src='../images/university/photo1.png' title='University Project' />
 
           </div>
 
           <div className='md:flex md:items-center md:justify-center md:flex-wrap md:space-x-12'>
 
-            <ImageCard path={'/projects/signfrom'} src={'../images/htmlcss/signin2.png'} title={'SignIn/Up Forms'} />
-            <ImageCard path={'/projects/frontwebsite'} src={'../images/htmlcss/christmas/photo1.png'} title={'HTML/CSS Templates'} />
-            <ImageCard path={'/projects/projectjavascript'} src={'../images/htmlcssjs/xo.png'} title={'HTML/CSS/JS Projects'} />
+            <Card path='/projects/signfrom' src='../images/htmlcss/signin2.png' title='SignIn/Up Forms' />
+            <Card path='/projects/frontwebsite' src='../images/htmlcss/christmas/photo1.png' title='HTML/CSS Templates' />
+            <Card path='/projects/projectjavascript' src='../images/htmlcssjs/xo.png' title='HTML/CSS/JS Projects' />
 
           </div>
 

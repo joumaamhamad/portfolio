@@ -19,9 +19,9 @@ return (
 
     <div className='flex items-center justify-center space-x-4'>
 
-        <Image src={'../images/university/photo1.png'} />
-        <Image src={'../images/university/photo5.png'} />
-        <Image src={'../images/university/photo6.png'} />
+        <Image src='../images/university/photo1.png' />
+        <Image src='../images/university/photo5.png' />
+        <Image src='../images/university/photo6.png' />
         
     </div>
 
