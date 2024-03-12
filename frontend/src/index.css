@@ -112,4 +112,8 @@ header ul li{
     text-align: center;
     /* Additional styling for your content */
   }
+
+  .cardDiv{
+    width: 320px;
+  }
 }

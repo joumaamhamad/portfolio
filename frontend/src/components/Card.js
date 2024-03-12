@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Card(props) {
 return (
-<div className='cursor-pointer w-96 h-full text-center border-4 mt-32 shadow-lg'>
+<div className='cardDiv cursor-pointer md:w-96 h-full text-center border-4 mt-32 shadow-lg sm:w-80'>
     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white py-6 px-6">
         <img className="w-full h-72 transform transition-transform duration-500 hover:scale-110" src={props.src} alt={props.title} />
         <div className="px-6 py-4">
