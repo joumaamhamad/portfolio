@@ -1,18 +1,22 @@
 
-import React, {  useState } from 'react';
+import React, {  Suspense, useState } from 'react';
 import './App.css';
 import { BrowserRouter  , Routes , Route, Link } from 'react-router-dom';
-import AmazonScreen from './screens/AmazonScreen';
 import HomeScreen from './screens/HomeScreen';
-import YelpCampScreen from './screens/YelpCampScreen';
-import UniversityScreen from './screens/UniversityScreen';
-import SignScreen from './screens/SignScreen';
-import FrontWebsiteScreen from './screens/FrontWebsiteScreen';
-import ProjectJavascriptScreen from './screens/ProjectJavascriptScreen';
 import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub  } from 'react-icons/fa';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { lazy } from 'react';
+
+//Lazy loading
+
+const AmazonScreen = lazy(() => import('./screens/AmazonScreen'));
+const YelpCampScreen = lazy(() => import('./screens/YelpCampScreen'));
+const UniversityScreen = lazy(() => import('./screens/UniversityScreen'));
+const SignScreen = lazy(() => import('./screens/SignScreen'));
+const FrontWebsiteScreen = lazy(() => import('./screens/FrontWebsiteScreen'));
+const ProjectJavascriptScreen = lazy(() => import('./screens/ProjectJavascriptScreen'));
 
 
 function App() {
@@ -22,8 +26,6 @@ function App() {
   const [email , setEmail ] = useState('');
   const [message , setMessage ] = useState('');
   const [ isSending , setIsSending ] = useState(false);
-  //const [audioLoaded, setAudioLoaded] = useState(false);
-  //const [audio] = useState(new Audio('./images/paudio.mp3'));
 
 
   const sendEmail = async (e) => {
@@ -50,22 +52,6 @@ function App() {
       setIsSending(false);
     }
   };
-
-/*
-  const handleAudioPlay = () => {
-    if (!audioLoaded) {
-      audio.volume = 0.5;
-      audio.play().catch(error => {
-        
-        console.error('Error playing audio:', error);
-      });
-      setAudioLoaded(true);
-    } else {
-      audio.pause();
-      setAudioLoaded(false);
-    }
-  };
-*/
 
 
   return (
@@ -96,15 +82,14 @@ function App() {
 
     <main>
       <Routes>
-        <Route path='/' element={<HomeScreen/> }/>
-        <Route path='/projects/amazon' element={<AmazonScreen />} />
-        <Route path='projects/yelpcamp' element={<YelpCampScreen />} />
-        <Route path='/projects/university' element={<UniversityScreen />} />
-        <Route path='/projects/signfrom' element={<SignScreen />} />
-        <Route path='/projects/frontwebsite' element={<FrontWebsiteScreen />} />
-        <Route path='/projects/projectjavascript' element={<ProjectJavascriptScreen />} /> 
+        <Route path='/' element={<HomeScreen />}/>
+        <Route path='/projects/amazon' element={<Suspense fallback={<div><h1>Loading...</h1></div>}><AmazonScreen /></Suspense>} />
+        <Route path='projects/yelpcamp' element={<Suspense fallback={<div><h1>Loading...</h1></div>}><YelpCampScreen /></Suspense>} />
+        <Route path='/projects/university' element={<Suspense fallback={<div><h1>Loading...</h1></div>}><UniversityScreen /></Suspense>} />
+        <Route path='/projects/signfrom' element={<Suspense fallback={<div><h1>Loading...</h1></div>}><SignScreen /></Suspense>} />
+        <Route path='/projects/frontwebsite' element={<Suspense fallback={<div><h1>Loading...</h1></div>}><FrontWebsiteScreen /></Suspense>} />
+        <Route path='/projects/projectjavascript' element={<Suspense fallback={<div><h1>Loading...</h1></div>}><ProjectJavascriptScreen /></Suspense>} /> 
       </Routes>
-
     </main>
 
     <footer id='footer' className=" bg-gray-800 text-gray-300 py-12 pr-8">
