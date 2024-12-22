@@ -3,7 +3,7 @@ import React, {  Suspense, useState } from 'react';
 import './App.css';
 import { BrowserRouter  , Routes , Route, Link } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
-import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub  } from 'react-icons/fa';
+import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub, FaTimes, FaBars  } from 'react-icons/fa';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -20,6 +20,12 @@ const ProjectJavascriptScreen = lazy(() => import('./screens/ProjectJavascriptSc
 
 
 function App() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
 
 
@@ -59,28 +65,61 @@ function App() {
   <div>
     <ToastContainer />
     
-    <header className='flex flex-col items-center w-full bg-current py-6'>
+    <header className="flex flex-col items-center w-full bg-current pt-4 md:pt-0">
+      <div className="flex flex-row items-center justify-between w-full px-6 text-white">
+        {/* Logo */}
+        <b className="text-xl md:text-4xl">Portfolio</b>
 
-      <div className='flex flex-row md:flex-row items-center justify-between text-white pl-0.5 pb-7'>
-
-        <b className='md:text-4xl text-xl mb-6 md:mb-2 md:mr-96'>Portfolio</b>
-
-        <div className='flex flex-row items-center md:flex-row md:items-center'>
-          <ul className='flex flex-wrap space-x-4 mb-4 md:mb-0 md:mr-8'>
-            <li className='mb-2 md:mb-0l'><Link to={'/'}>Home</Link></li>
-            <li className='mb-2 md:mb-0'><Link to={'/#about'}>About</Link></li>
-            <li className='mb-2 md:mb-0'><Link to={'/#skills'}>Skills</Link></li>
-            <li className='mb-2 md:mb-0'><Link to={'/#projects'}>Projects</Link></li>
-            <li className='mb-2 md:mb-0'><Link to={'/#experience'}>Experience</Link></li>
-          </ul>
-          
-          <button className='contact-me border-2 md:mt-6 md:p-2.5 md:ml-8 ml-4 p-1.5 mb-6'><a href='#footer'>Contact Me</a></button>
-          
+        {/* Hamburger Icon for Mobile */}
+        <div className="md:hidden">
+          <button onClick={toggleMenu} className="focus:outline-none">
+            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
         </div>
+
+        {/* Navigation Links */}
+        <nav
+          className={`${
+            isMenuOpen ? 'block' : 'hidden'
+          } absolute top-16 md:top-4 left-0 w-full bg-black text-white md:relative md:w-auto md:bg-transparent md:flex md:flex-row items-center md:items-center md:ml-auto md:mt-0 md:space-x-8`}
+        >
+          <ul className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+            <li>
+              <Link to={'/'} onClick={() => setIsMenuOpen(false)}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to={'/#about'} onClick={() => setIsMenuOpen(false)}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to={'/#skills'} onClick={() => setIsMenuOpen(false)}>
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link to={'/#projects'} onClick={() => setIsMenuOpen(false)}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link to={'/#experience'} onClick={() => setIsMenuOpen(false)}>
+                Experience
+              </Link>
+            </li>
+          </ul>
+
+          <button
+            className="contact-me border-2 p-1.5 md:p-2.5 md:ml-8 mt-4 md:mt-0"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <a href="#footer">Contact Me</a>
+          </button>
+        </nav>
       </div>
     </header>
-
-
     <main>
       <Routes>
         <Route path='/' element={<HomeScreen />}/>

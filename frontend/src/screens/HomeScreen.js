@@ -86,7 +86,7 @@ return (
     <button className='border-2 mt-8 px-3.5 h-10' onClick={() => downloadFile()}>Download CV</button>
   </div>
 
-<div className='md:relative md:bottom-20 md:w-1/4 md:h-1/4 md:mt-0 mt-8 mb-8 ml-24 w-1/2'>
+<div className='md:relative md:bottom-20 md:w-1/4 md:h-1/4 md:mt-0 mt-8 mb-8 ml-28 w-1/2'>
   <img className='h-full w-full rounded-full border-4 mx-auto md:ml-0 md:mb-32' alt='ok' src={'../images/portfolioimage.jpeg'} />
 </div>
 </div>
@@ -196,38 +196,37 @@ return (
         </div>
       </div>
 
-      <section id="experience" className="py-12 px-12">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl text-white font-bold text-center mb-8 text-gray-800 mb-12">Experience</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Experience Item 1 */}
-            <div className="bg-white shadow-md rounded-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-700">HRIS Application Internship</h3>
-              <p className="text-gray-500">ESA BUSINESS SCHOOL</p>
-              <p className="text-gray-400 text-sm">April 2024 - Present</p>
-              <ul className="list-disc list-inside mt-4 text-gray-600">
-                <li>Currently developing a Human Resource Information System (HRIS) using Next.js with TypeScript, MySQL, and Sequelize.</li>
-                <li>The HRIS program is designed for the university's HR department to manage and analyze data for professors and staff.</li>
-                <li>Viewing and managing professor data (personal information, salary, education, languages…).</li>
-                <li>Managing staff data and tracking resignations.</li>
-                <li>Analyzing data with integrated charts and visualizations for better decision-making.</li>
+      <section id="experience" className="md:py-12 md:px-24">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl text-white font-bold text-center mb-8 text-gray-800 mb-12">Experience</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* Experience Item 1 */}
+      <div className="bg-white shadow-md rounded-lg p-6 w-11/12 sm:px-24 sm:w-3/4 md:w-auto mx-auto">
+        <h3 className="text-xl font-semibold text-gray-700">HRIS Application Internship</h3>
+        <p className="text-gray-500">ESA BUSINESS SCHOOL</p>
+        <p className="text-gray-400 text-sm">April 2024 - Present</p>
+        <ul className="list-disc list-inside mt-4 text-gray-600">
+          <li>Currently developing a Human Resource Information System (HRIS) using Next.js with TypeScript, MySQL, and Sequelize.</li>
+          <li>The HRIS program is designed for the university's HR department to manage and analyze data for professors and staff.</li>
+          <li>Viewing and managing professor data (personal information, salary, education, languages…).</li>
+          <li>Managing staff data and tracking resignations.</li>
+          <li>Analyzing data with integrated charts and visualizations for better decision-making.</li>
+        </ul>
+      </div>
+      {/* Experience Item 2 */}
+      <div className="bg-white shadow-md rounded-lg p-6 w-11/12 sm:px-24 sm:w-3/4 md:w-auto mx-auto">
+        <h3 className="text-xl font-semibold text-gray-700">Web Development Bootcamp(Certificate)</h3>
+        <p className="text-gray-500">ESA Coding Lab</p>
+        <p className="text-gray-400 text-sm">May 2022 - Dec 2022</p>
+        <ul className="list-disc list-inside mt-4 text-gray-600">
+          <li>ESA Business School: Full-Stack Developers (HTML5, CSS3, MySQL, MERN STACK),2024, (Lebanon).</li>
+          <li>ESIEE-IT France: Full-Stack Developers (HTML5,CSS3,MySQL,MERN STACK),2024,(Lebanon).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-              </ul>
-            </div>
-            {/* Experience Item 2 */}
-            <div className="bg-white shadow-md rounded-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-700">Web Development Bootcamp(Certificate)</h3>
-              <p className="text-gray-500">ESA Coding Lab</p>
-              <p className="text-gray-400 text-sm">May 2022 - Dec 2022</p>
-              <ul className="list-disc list-inside mt-4 text-gray-600">
-                <li>ESA Business School: Full-Stack Developers (HTML5, CSS3, MySQL, MERN STACK),2024, (Lebanon).</li>
-                <li>ESIEE-IT France: Full-Stack Developers (HTML5,CSS3,MySQL,MERN STACK),2024,(Lebanon).</li>
-          
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
       <div id='projects' className='flex flex-col items-center text-white py-16'>
