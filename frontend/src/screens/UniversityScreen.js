@@ -27,7 +27,7 @@ return (
 
     <div className='text-white py-9 text-2xl'><h1><b>University Project</b></h1></div>
     <div className='flex items-center justify-center text-white'>
-        <p className='md:text-center md:h-1/3 md:w-2/5 md:text-xl text-l text-center'>This is a university website for the students for the Lebanese university in my master degree, using HTML, CSS, JavaScript, Ajax, JQuery, PHP, sql.</p>
+        <p className='md:text-center md:h-1/3 md:w-2/5 md:text-xl text-l text-center'>This university website was developed for the students of the Lebanese University as part of my Master’s degree project. It was built using a robust stack of technologies, including HTML, CSS, JavaScript, Ajax, jQuery, PHP, and SQL, to deliver an interactive and user-friendly platform.</p>
     </div>
 
     <div className='py-9 text-white'>Click here to visit it: <a className='text-lime-500 underline' href='https://github.com/joumaamhamad/university'>click</a></div>

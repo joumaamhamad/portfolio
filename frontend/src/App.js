@@ -71,6 +71,7 @@ function App() {
             <li className='mb-2 md:mb-0'><Link to={'/#about'}>About</Link></li>
             <li className='mb-2 md:mb-0'><Link to={'/#skills'}>Skills</Link></li>
             <li className='mb-2 md:mb-0'><Link to={'/#projects'}>Projects</Link></li>
+            <li className='mb-2 md:mb-0'><Link to={'/#experience'}>Experience</Link></li>
           </ul>
           
           <button className='contact-me border-2 md:mt-6 md:p-2.5 md:ml-8 ml-4 p-1.5 mb-6'><a href='#footer'>Contact Me</a></button>

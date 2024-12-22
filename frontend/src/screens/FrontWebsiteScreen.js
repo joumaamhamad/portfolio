@@ -31,7 +31,7 @@ return (
 
             <div className='text-white py-9 text-2xl'><h1><b>Christmas Project</b></h1></div>
             <div className='flex items-center justify-center text-white'>
-                <p className='md:text-center md:h-1/3 md:w-2/5 md:text-xl text-l text-center'>Welcome to the Christmas project! This is a HTML/CSS Project, this was completed at the end of 2021 and beginning og 2022 during my training period at front end.</p>
+                <p className='md:text-center md:h-1/3 md:w-2/5 md:text-xl text-l text-center'>Welcome to the Christmas project! This is a HTML/CSS Project, this was completed at the end of 2021 and beginning of 2022 during my training period at front end.</p>
             </div>
 
             
