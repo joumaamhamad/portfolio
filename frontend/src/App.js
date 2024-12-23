@@ -132,56 +132,55 @@ function App() {
       </Routes>
     </main>
 
-    <footer id='footer' className=" bg-gray-800 text-gray-300 py-12 pr-8">
-      <div className="footer container mx-auto flex flex-wrap space-x-12">
-        <div className="footer-section w-full md:w-1/4 space-y-6 mb-8 ml-8">
-          <h2 className="text-xl font-bold mb-4">About Us</h2>
-          <p className="mb-4">
-            Hi, I'm Mhamad Jomaa, a skilled MERN stack developer with hands-on experience and a portfolio of successful projects. Let's collaborate to bring your ideas to life.
-          </p>
-          <div className="contact">
-            <span className='flex space-x-2'>
-              +96170583380
-            </span>
-            <span>
-              mhamad_jomaa@outlook.com
-            </span>
-          </div>
-
-          <div className="socials flex  mt-4">
-            <a href="https://www.facebook.com/mhamad.jomaa" className="text-gray-300 hover:text-gray-400 mr-4"><FaFacebook className='size-7' /></a>
-            <a href="https://github.com/joumaamhamad" className="text-gray-300 hover:text-gray-400 mr-4"><FaGithub className='size-7 ml-6' /></a>
-            <a href="https://www.instagram.com/mhamadjomaa8/" className="text-gray-300 hover:text-gray-400 mr-4"><FaInstagram className='size-7 ml-6' /></a>
-            <a href="https://www.linkedin.com/in/mhamad-jomaa-76409a230/" className="text-gray-300 hover:text-gray-400"><FaLinkedin className='size-7 ml-6' /></a>
-          </div>
-        </div>
-
-        <div className="footer-section w-full md:w-1/4 mb-8">
-          <h2 className="text-xl font-bold mb-4">Quick Links</h2>
-          <ul>
-            <li className='mb-1.5'><a href="/" className="text-gray-300 hover:text-gray-400">Home</a></li>
-            <li className='mb-1.5'><a href="/?#about" className="text-gray-300 hover:text-gray-400">About</a></li>
-            <li className='mb-1.5'><a href="/?#skills" className="text-gray-300 hover:text-gray-400">Skills</a></li>
-            <li className='mb-1.5'><a href="/" className="text-gray-300 hover:text-gray-400">Portfolio</a></li>
-            
-          </ul>
-        </div>
-        <div className="footer-section w-full md:w-1/3 mb-8">
-          <h2 className="text-xl font-bold mb-4">Contact Us</h2>
-          <form onSubmit={sendEmail}>
-            <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} name="email" className="bg-gray-700 text-gray-300 w-full py-2 px-3 mb-3 rounded-sm" placeholder="Your email..." />
-            <textarea name="message" value={message} onChange={(e) => setMessage(e.target.value)} className="bg-gray-700 text-gray-300 w-full py-2 px-3 mb-3 rounded-sm" placeholder="Your message..."></textarea>
-            <button type="submit" className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-sm" disabled={isSending}>
-              {isSending ? 'loading...' : 'Send'}
-            </button>
-          </form>
-        </div>
+    <footer id="footer" className="bg-gray-800 text-gray-300 py-10">
+  <div className="container mx-auto text-center space-y-8">
+    {/* About Section */}
+    <div className="about-section space-y-4">
+      <h2 className="text-2xl font-bold">About Us</h2>
+      <p>
+        Mhamad Jomaa,a skilled MERN stack developer with hands-on experience
+      </p>
+      <div className="contact">
+        <p>+96170583380</p>
+        <p>mhamad_jomaa@outlook.com</p>
       </div>
+    </div>
 
-      <div className="text-center py-4 border-t border-gray-700">
-        &copy; Portfolio 2024 | Mhamad Jomaa
-      </div>
-    </footer>
+    {/* Social Links */}
+    <div className="socials flex justify-center space-x-6">
+      <a href="https://www.facebook.com/mhamad.jomaa" className="text-gray-300 hover:text-gray-400">
+        <FaFacebook className="text-2xl" />
+      </a>
+      <a href="https://github.com/joumaamhamad" className="text-gray-300 hover:text-gray-400">
+        <FaGithub className="text-2xl" />
+      </a>
+      <a href="https://www.instagram.com/mhamadjomaa8/" className="text-gray-300 hover:text-gray-400">
+        <FaInstagram className="text-2xl" />
+      </a>
+      <a href="https://www.linkedin.com/in/mhamad-jomaa-76409a230/" className="text-gray-300 hover:text-gray-400">
+        <FaLinkedin className="text-2xl" />
+      </a>
+    </div>
+
+    {/* Quick Links */}
+    <div className="quick-links">
+      <h2 className="text-xl font-bold mb-4">Quick Links</h2>
+      <ul className="flex justify-center space-x-6">
+        <li><a href="/" className="hover:text-gray-400">Home</a></li>
+        <li><a href="/?#about" className="hover:text-gray-400">About</a></li>
+        <li><a href="/?#skills" className="hover:text-gray-400">Skills</a></li>
+        <li><a href="/" className="hover:text-gray-400">Portfolio</a></li>
+      </ul>
+    </div>
+
+    {/* Footer Bottom */}
+    <div className="border-t border-gray-700 pt-4">
+      <p>&copy; Portfolio 2024 | Mhamad Jomaa</p>
+    </div>
+  </div>
+</footer>
+
+
     
   </div>
 </BrowserRouter>

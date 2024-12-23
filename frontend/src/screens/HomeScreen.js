@@ -100,7 +100,7 @@ return (
         <div><b className='text-3xl md:text-2xl'>My Skills</b></div>
         <div className='md:flex md:items-center md:text-white md:flex-wrap md:py-24 md:space-x-14'>
 
-          <div className='md:flex md:flex-col md:space-y-8 md:w-1/3 md:ml-24 md:pt-8 md:pl-8 md:pb-8 md:pr-8 md:border-2 w-3/4 py-12 ml-12'>
+          <div className='md:flex md:flex-col md:space-y-8 md:w-1/3 md:ml-24 md:pt-8 md:pl-8 md:pb-8 md:pr-8 md:border-2 w-3/4 py-12 ml-16'>
 
             <div className='flex flex-col space-y-2'>
               <div><b className='text-2xl py-2.5 underline'>Personal Experience</b></div>
@@ -117,9 +117,9 @@ return (
               <div><b className='text-2xl py-2.5 underline'>Education</b></div>
               <div>
                 <ul className='list-disc'>
-                  <li className='text-l'>I have Bachelor’s degree in programing (Computer Science) from Lebanese University.</li>
+                  <li className='text-l'>I have <u><b>Bachelor’s</b></u> and <u><b>Master 1</b></u> degree in programing (Computer Science) from Lebanese University.</li>
                   <li className='text-l'>Since November 2020 Lebanese University Nabatie, Lebanon.</li>
-                  <li className='text-l'>Currently, I am studying for a master’s degree at the Lebanese university.</li>
+                  {/* <li className='text-l'>Currently, I am studying for a master’s degree at the Lebanese university.</li> */}
                 </ul>
               </div>
             </div>
@@ -137,7 +137,7 @@ return (
 
           </div>
 
-          <div className='md:flex md:flex-col md:items-start ml-12'>
+          <div className='md:flex md:flex-col md:items-start ml-16'>
 
             <b className='text-2xl py-2.5 underline'>Personal Skills</b>
             <Progress value={100} title='HTML:' />
@@ -152,7 +152,7 @@ return (
 
           </div>
 
-          <div className='md:flex md:flex-col md:items-start mt-12 ml-12'>
+          <div className='md:flex md:flex-col md:items-start mt-12 ml-16'>
 
             <b className='text-2xl py-2.5 underline'>University Skills</b>
             <Progress value={70} title='C Language:' />
