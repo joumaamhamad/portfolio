@@ -19,50 +19,24 @@ export default function HomeScreen() {
       }
     }
   }, [hash]);
-
-  useEffect(() => {
-    // Observer to detect when the "About Me" section is in view
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && videoRef.current) {
-          videoRef.current.play();
-        }
-      },
-      {
-        threshold: 0.5, // Play the video when 50% of the section is visible
-      }
-    );
-
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      observer.observe(aboutSection);
-    }
-
-    return () => {
-      if (aboutSection) {
-        observer.unobserve(aboutSection);
-      }
-    };
-  }, []);
-
+  
   const downloadFile = () => {
     const fileUrl = 'http://localhost:3000/MhamadJomaa.docx';
-
+  
     // Create a temporary anchor element
     const link = document.createElement('a');
     link.href = fileUrl;
-
+  
     // Set the filename that will be used when downloading the file
     link.setAttribute('download', 'MhamadJomaa.docx');
-
+  
     // Programmatically trigger the download
     document.body.appendChild(link);
     link.click();
-
+  
     // Clean up
     document.body.removeChild(link);
   };
-
   
 
 
@@ -102,9 +76,7 @@ return (
             poster="../images/img1.webp"
             src="../images/pvideo.mp4"
             type="video/mp4"
-          >
-            Your browser does not support the video tag.
-          </video>
+        />
         </div>
 
         <div className="text-white md:w-1/3 md:h-1/2 ml-6 mt-6">
