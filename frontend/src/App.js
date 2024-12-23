@@ -4,8 +4,8 @@ import './App.css';
 import { BrowserRouter  , Routes , Route, Link } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub, FaTimes, FaBars  } from 'react-icons/fa';
-import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
+
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { lazy } from 'react';
 
@@ -29,35 +29,9 @@ function App() {
 
 
 
-  const [email , setEmail ] = useState('');
-  const [message , setMessage ] = useState('');
-  const [ isSending , setIsSending ] = useState(false);
 
 
-  const sendEmail = async (e) => {
 
-    e.preventDefault();
-    setEmail('');
-    setMessage('');
-    setIsSending(true);
-
-    try {
-      const response = await axios.post('/send-email', {
-        email: email,
-        message: message,
-      });
-
-      toast.success("Email sent!Thank you!!");
-      console.log('Email sent:', response.data);
-      setIsSending(false);
-
-    } catch (error) {
-
-      toast.error("Error sending email!!");
-      console.error('Error sending email:', error);
-      setIsSending(false);
-    }
-  };
 
 
   return (
