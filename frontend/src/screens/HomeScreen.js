@@ -49,7 +49,7 @@ return (
     <b className='text-2xl'>Hi There!!</b><br/>
     <h1 className='text-2xl md:text-4xl'>Im Mhamad Jomaa</h1><br/>
     <b className='text-xs md:text-lg lg:text-xl xl:text-2xl'>
-      Full Stack (MERN Stack) | Seeking Internship Opportunities
+      Full Stack (MERN Stack) | Master In Computer Science
     </b>
     <div className='md:flex md:flex-row md:space-x-4 md:mt-3 md:justify-start flex flex-row space-x-3 mt-3 items-center justify-center'>
       <a href='https://www.facebook.com/mhamad.jomaa'><FaFacebook className='size-7' /></a>
