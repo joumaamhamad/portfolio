@@ -21,7 +21,7 @@ export default function HomeScreen() {
   }, [hash]);
   
   const downloadFile = () => {
-    const fileUrl = 'http://localhost:3000/MhamadJomaa.docx';
+    const fileUrl = 'https://mhamadjomaa.netlify.app/MhamadJomaa.docx';
   
     // Create a temporary anchor element
     const link = document.createElement('a');
