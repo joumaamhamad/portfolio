@@ -290,7 +290,7 @@ export default function HomeScreen() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg md:text-xl font-semibold text-white">HRIS Application Internship</h3>
+                  <h3 className="text-lg md:text-xl font-semibold text-white">HRIS Application</h3>
                   <p className="text-blue-400 text-sm md:text-base">ESA BUSINESS SCHOOL</p>
                   <p className="text-gray-400 text-xs md:text-sm">April 2024 - Present</p>
                 </div>

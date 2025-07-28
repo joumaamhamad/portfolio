@@ -53,7 +53,7 @@ const isNotHome = location.pathname !== '/';
         {/* Logo */}
         <div className="flex items-center space-x-2">
   {isNotHome && (
-    <button onClick={() => navigate('/')} className="text-white hover:text-gray-300 mt-1">
+    <button onClick={() => navigate('/')} className="text-white hover:text-gray-300 mt-0.5">
       <FaArrowLeft size={20} />
     </button>
   )}
