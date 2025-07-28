@@ -1,7 +1,7 @@
 
 import React, {  Suspense, useState } from 'react';
 import './App.css';
-import { BrowserRouter  , Routes , Route, Link } from 'react-router-dom';
+import { Routes , Route, Link } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub, FaTimes, FaBars  } from 'react-icons/fa';
 
