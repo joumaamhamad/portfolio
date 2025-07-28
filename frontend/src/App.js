@@ -8,6 +8,8 @@ import { FaFacebook  , FaInstagram , FaLinkedin, FaGithub, FaTimes, FaBars  } fr
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { lazy } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 
 //Lazy loading
 
@@ -28,6 +30,13 @@ function App() {
   };
 
 
+const location = useLocation();
+const navigate = useNavigate();
+
+// Check if not on HomeScreen
+const isNotHome = location.pathname !== '/';
+
+
 
 
 
@@ -35,63 +44,73 @@ function App() {
 
 
   return (
-<BrowserRouter>
+
   <div>
     <ToastContainer />
     
-    <header className="flex flex-col items-center w-full bg-current pt-4 md:pt-0">
+    <header className="flex flex-col items-center w-full pt-4 md:pt-0">
       <div className="flex flex-row items-center justify-between w-full px-6 text-white">
         {/* Logo */}
-        <b className="text-xl md:text-4xl">Portfolio</b>
+        <div className="flex items-center space-x-2">
+  {isNotHome && (
+    <button onClick={() => navigate('/')} className="text-white hover:text-gray-300 mt-1">
+      <FaArrowLeft size={20} />
+    </button>
+  )}
+  <b className="text-xl md:text-4xl bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+    Portfolio
+  </b>
+</div>
 
-        {/* Hamburger Icon for Mobile */}
-        <div className="md:hidden">
-          <button onClick={toggleMenu} className="focus:outline-none">
-            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-          </button>
-        </div>
+
+    {/* Hamburger/Close Icon - Fixed position when menu is open */}
+    <div className="md:hidden z-50">
+      <button onClick={toggleMenu} className="focus:outline-none">
+        {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+      </button>
+    </div>
 
         {/* Navigation Links */}
-        <nav
-          className={`${
-            isMenuOpen ? 'block' : 'hidden'
-          } absolute top-16 md:top-4 left-0 w-full bg-black text-white md:relative md:w-auto md:bg-transparent md:flex md:flex-row items-center md:items-center md:ml-auto md:mt-0 md:space-x-8`}
-        >
-          <ul className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
-            <li>
-              <Link to={'/'} onClick={() => setIsMenuOpen(false)}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to={'/#about'} onClick={() => setIsMenuOpen(false)}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to={'/#skills'} onClick={() => setIsMenuOpen(false)}>
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link to={'/#projects'} onClick={() => setIsMenuOpen(false)}>
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link to={'/#experience'} onClick={() => setIsMenuOpen(false)}>
-                Experience
-              </Link>
-            </li>
-          </ul>
+{/* Fullscreen Overlay Menu for Mobile */}
+<nav
+  className={`fixed top-0 left-0 w-full h-full bg-black text-white flex flex-col items-center justify-center z-40 transition-transform duration-300 ${
+    isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+  } md:relative md:flex md:flex-row md:items-center md:justify-end md:translate-x-0 md:bg-transparent md:h-auto md:static`}
+>
+  <ul className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 text-lg">
+    <li>
+      <Link to={'/'} onClick={() => setIsMenuOpen(false)}>
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link to={'/#about'} onClick={() => setIsMenuOpen(false)}>
+        About
+      </Link>
+    </li>
+    <li>
+      <Link to={'/#skills'} onClick={() => setIsMenuOpen(false)}>
+        Skills
+      </Link>
+    </li>
+    <li>
+      <Link to={'/#projects'} onClick={() => setIsMenuOpen(false)}>
+        Projects
+      </Link>
+    </li>
+    <li>
+      <Link to={'/#experience'} onClick={() => setIsMenuOpen(false)}>
+        Experience
+      </Link>
+    </li>
+    {/* <li>
+      <a href="#footer" onClick={() => setIsMenuOpen(false)} className="border-2 px-4 py-2 rounded-md">
+        Contact Me
+      </a>
+    </li> */}
+  </ul>
+</nav>
 
-          <button
-            className="contact-me border-2 p-1.5 md:p-2.5 md:ml-8 mt-4 md:mt-0"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            <a href="#footer">Contact Me</a>
-          </button>
-        </nav>
       </div>
     </header>
     <main>
@@ -112,10 +131,9 @@ function App() {
     <div className="about-section space-y-4">
       <h2 className="text-2xl font-bold">About Us</h2>
       <p>
-        Mhamad Jomaa,a skilled MERN stack developer with hands-on experience
+        Mohamad Jomaa,a skilled MERN stack developer with hands-on experience.
       </p>
       <div className="contact">
-        <p>+96170583380</p>
         <p>mhamad_jomaa@outlook.com</p>
       </div>
     </div>
@@ -149,7 +167,7 @@ function App() {
 
     {/* Footer Bottom */}
     <div className="border-t border-gray-700 pt-4">
-      <p>&copy; Portfolio 2024 | Mhamad Jomaa</p>
+      <p>&copy; Portfolio 2025 | Mohamad Jomaa</p>
     </div>
   </div>
 </footer>
@@ -157,7 +175,7 @@ function App() {
 
     
   </div>
-</BrowserRouter>
+
 );
 }
 
