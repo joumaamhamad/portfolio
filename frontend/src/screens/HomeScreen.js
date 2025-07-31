@@ -143,12 +143,12 @@ export default function HomeScreen() {
           variants={slideInFromLeft}
           className="w-full md:w-1/2 h-64 md:h-1/2 border-2 rounded-lg overflow-hidden shadow-lg mb-8 md:mb-0"
         >
-          <video
-            ref={videoRef}
-            controls
-            poster="../images/img1.webp"
-            src="../images/pvideo.mp4"
-            type="video/mp4"
+          <img
+            // ref={videoRef}
+            // controls
+            // poster="../images/img1.webp"
+            src="../images/img3.jpg"
+            // type="video/mp4"
             className="w-full h-full object-cover"
           />
         </motion.div>
